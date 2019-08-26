@@ -51,10 +51,14 @@ button {
   cursor: pointer;
 }
 .header-text-button {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff6666;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
   font-size: 14px;
-  height: 36px;
+  font-weight: 400;
 }
 .header-text-title {
   font-size: 30px;
