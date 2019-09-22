@@ -1,27 +1,36 @@
+
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
-
-}
-.logo {
-  display: flex;
-  justify-content: center;
-
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
+  margin: 0 auto;
 }
 
 body {
   font-family: Montserrat;
   font-weight: 700;
+}
+a {
+  text-decoration: none;
+ 
 }
 
 .container-fluid {
@@ -32,7 +41,43 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
 }
+
+ul {
+  list-style: none;
+}
+.header-title {
+  text-transform: uppercase;
+  font-size: 52px;   
+  color: #ffffff; 
+ 
+}
+
+.header-title-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+ 
+ 
+}
+.header-btn {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;    
+  background-color: #ff4e50;
+  padding: 15px 0;
+  border: none;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  max-width: 294px;
+}
+
 .link {
   border: 2px solid transparent;
   border-radius: 50px;
@@ -43,49 +88,11 @@ body {
 
 .link:hover {
   border: 2px solid #fff;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
-button {
-  outline: none;
-  cursor: pointer;
-}
-.header-text-button {
-  width: 280px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  background-color: #ff6666;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-}
-.header-text-title {
-  font-size: 30px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 
-.header-text-subtitle {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 300;
-  color: #ffffff;
-  
-
-}
-.header-text-button {
-  width: 280px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  background-color: #ff6666;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-}
-/* Sectione Style */
+/* Section*/
 
 .main-content {
   text-align: center;
@@ -93,14 +100,14 @@ button {
 }
 
 .partner h3 {
-  margin: 0 auto;
+  
   font-size: 22px;
   letter-spacing: -0.4px;
 }
 
 .partner-list {
-  width: 230px;
-  margin: 0 auto;
+  
+  margin-bottom: 30px;
 }
 
 .partner-item {
@@ -152,7 +159,8 @@ button {
 }
 
 .partner-button {
-  width: 280px;
+  max-width: 280px;
+  min-width: 200px;
   height: 40px;
   border-radius: 20px;
   border: 2px solid #ff4e50;
